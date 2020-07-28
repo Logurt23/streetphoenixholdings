@@ -7,13 +7,8 @@ def success(request):
 
 # Tailwinds CSS homepage
 def homepage(request):
-    left = Upload.objects.all()[:3]
-    middle = Upload_two.objects.all()[:3]
-    right = Upload_three.objects.all()[:3]
     return render(request, 'base/homepage.html', context={
-        'left': left,
-        'middle': middle,
-        'right': right,
+
     })
 
 # Bootstrap Homepage
