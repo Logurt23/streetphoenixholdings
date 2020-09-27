@@ -12,10 +12,8 @@ def homepage(request):
     })
 
 # Bootstrap Homepage
-def bootstrap(request):
+def events(request):
 
-    this_year = date.today().year
+    return render(request, 'base/events.html', context={
 
-    return render(request, 'bootstrap/bootstrap.html', context={
-        'year': this_year,
     })
